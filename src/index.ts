@@ -15,3 +15,6 @@ configureDb()
     .catch((err) => {
         console.log(`Server failed with error: ${err}`);
     })
+
+
+

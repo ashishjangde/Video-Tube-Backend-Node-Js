@@ -54,7 +54,7 @@ const UserSchema = new Schema<IUser>({
         type: [Schema.Types.ObjectId],
         ref: "Video",
     },
-});
+},{timestamps: true});
 
 UserSchema.pre<IUser>("save", async function (next) {
     if (!this.isModified("password")) return next();
@@ -67,8 +67,16 @@ UserSchema.pre<IUser>("save", async function (next) {
 });
 
 UserSchema.methods.comparePassword = async function (candidatePassword: string): Promise<boolean> {
+
+    if (!candidatePassword) {
+        throw new Error("Candidate password is required for comparison.");
+    }
+    if (!this.password) {
+        throw new Error("Stored password is missing from the user document.");
+    }
     return bcrypt.compare(candidatePassword, this.password);
 };
+
 
 UserSchema.methods.generateAccessToken = function (): string {
     try {
@@ -92,8 +100,8 @@ UserSchema.methods.generateAccessToken = function (): string {
 
 UserSchema.methods.generateRefreshToken = function (): string {
     try {
-        const secretKey = process.env.JWT_REFRESH_SECRET_KEY_!;
-        const expiresIn = process.env.JWT_REFRESH_EXPIRY; // default to 7 days
+        const secretKey = process.env.JWT_REFRESH_SECRET_KEY!;
+        const expiresIn = process.env.JWT_REFRESH_EXPIRY;
         return jwt.sign(
             {
                 _id: this._id,
@@ -107,4 +115,6 @@ UserSchema.methods.generateRefreshToken = function (): string {
     }
 };
 
+
+export type UserTypes = IUser;
 export const User = model<IUser>("User", UserSchema);

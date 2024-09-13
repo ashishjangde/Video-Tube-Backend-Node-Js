@@ -14,11 +14,11 @@ export const uploadOnCloudinary = async (localFilePath: string) => {
         const response = await cloudinary.uploader.upload(localFilePath, {
             resource_type: "auto"
         });
-        fs.unlinkSync(localFilePath); // Delete file after upload
+        fs.unlinkSync(localFilePath);
         return response;
     } catch (error) {
         console.error("Cloudinary upload error:", error);
-        fs.unlinkSync(localFilePath); // Ensure file is deleted even if upload fails
+        fs.unlinkSync(localFilePath);
         return null;
     }
 };
