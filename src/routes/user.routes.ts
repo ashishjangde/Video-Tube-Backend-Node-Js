@@ -13,6 +13,10 @@ import {
     logoutUser ,
     refreshUserToken,
     updateUser,
+    updateUserAvatar,
+    updateUserCoverImage,
+    getUserWatchHistory,
+    getChannelProfile,
 } from "../controllers/user.controller.js";
 
 
@@ -36,9 +40,11 @@ router.route("/login").post(loginUser);
 router.route("/logout").post(verifyUserJwt,logoutUser)
 router.route("/refresh").post(refreshUserToken)
 router.route("/update").post(verifyUserJwt,updateUser)
+router.route("/update/avatar").post(Upload.single( "avatar"),verifyUserJwt,updateUserAvatar)
+router.route("/update/coverImage").post(Upload.single("coverImage"),verifyUserJwt,updateUserCoverImage)
 
-
-
+router.route("/channel/:username").get(verifyUserJwt, getChannelProfile);
+router.route("/history").get(verifyUserJwt,getUserWatchHistory)
 
 
 

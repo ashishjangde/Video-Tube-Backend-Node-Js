@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1916215e-6b01-4516-b3ad-293b1f432702" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/middlewares/userAuthorization.middleware.ts" afterDir="false" />
+    <list default="true" id="1916215e-6b01-4516-b3ad-293b1f432702" name="Changes" comment="Added Some Routes And Bug fix">
+      <change afterPath="$PROJECT_DIR$/src/controllers/video.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/models/subscription.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/temp/artist-white.jpg+1726145256396" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/temp/pexels-maxim-landolfi-1302105274-27301620.jpg+1726145256422" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/controllers/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/models/user.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/user.model.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/models/video.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/models/video.model.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routes/user.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/user.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ApiError.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/ApiError.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/cloudinary.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/cloudinary.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ashishjangde&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ashishjangde/VideoTubeBackend.git&quot;,
+    &quot;accountId&quot;: &quot;3b5ae911-c993-4291-a9c0-5b5dd574b60c&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 4
@@ -92,11 +96,30 @@
       <workItem from="1726162612074" duration="3702000" />
       <workItem from="1726167522359" duration="751000" />
       <workItem from="1726168328006" duration="3620000" />
-      <workItem from="1726208356120" duration="4598000" />
+      <workItem from="1726208356120" duration="11281000" />
+      <workItem from="1726234079559" duration="851000" />
+      <workItem from="1726248537839" duration="1224000" />
+      <workItem from="1726294561010" duration="5000" />
+      <workItem from="1726301255415" duration="2162000" />
+      <workItem from="1726346302936" duration="253000" />
+      <workItem from="1726478942267" duration="6771000" />
     </task>
+    <task id="LOCAL-00001" summary="Added Some Routes And Bug fix">
+      <option name="closed" value="true" />
+      <created>1726213445883</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1726213445883</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added Some Routes And Bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Some Routes And Bug fix" />
   </component>
 </project>
