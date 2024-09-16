@@ -1,4 +1,4 @@
-import mongoose ,{Schema ,Document ,model} from "mongoose";
+import {Schema ,Document ,model} from "mongoose";
 
 interface VideoModelTypes extends Document {
     videoFile : string,
